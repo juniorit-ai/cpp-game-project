@@ -1,4 +1,4 @@
-# Learn the C++ by developing your own game
+# Learn C++ by developing your own game
 
 ## License
 
