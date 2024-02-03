@@ -4,18 +4,22 @@
 #include "juniorit/GameCraft/Scene.h"
 #include "juniorit/GameCraft/Sprite.h"
 
-class FirstScene : public Scene {
+class FirstScene : public Scene
+{
 public:
     FirstScene();
+
     ~FirstScene() override;
 
     void onUpdate(int ticks) override;
+
     void onKeyboard(Event event, int keyCode) override;
+
     void onMouse(Event event, Point point) override;
 
 private:
-    Sprite* sprite;  // Raw pointer for Sprite
-    Sprite* background;
+    Sprite *sprite;
+    Sprite *background;
     int timeLapse;
 };
 

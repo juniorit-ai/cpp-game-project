@@ -36,18 +36,18 @@ Sprite::~Sprite() {
     }
 }
 
-void Sprite::setPosition(float top, float left) {
+void Sprite::setPosition(double top, double left) {
     this->top = top;
     this->left = left;
     reDraw = true;
 }
 
-void Sprite::setScale(float scale) {
+void Sprite::setScale(double scale) {
     this->scale = scale;
     reDraw = true;
 }
 
-void Sprite::setAngle(float angle) {
+void Sprite::setAngle(double angle) {
     this->angle = angle;
     reDraw = true;
 }

@@ -12,9 +12,9 @@ public:
 
     Sprite(const std::string& image);
     Sprite(const std::string& image, const std::vector<Rect>& frames);
-    void setPosition(float top, float left);
-    void setScale(float scale);
-    void setAngle(float angle);
+    void setPosition(double top, double left);
+    void setScale(double scale);
+    void setAngle(double angle);
     void setCenter(const Point& center);
     void setFlip(FlipMode Mode);
     void setFrame(int frame);
@@ -25,12 +25,12 @@ public:
     ~Sprite();
 
 private:
-    float top;
-    float left;
+    double top;
+    double left;
     int width;
     int height;
-    float scale;
-    float angle;
+    double scale;
+    double angle;
     Point center;
     FlipMode flip;
     void* texture;
