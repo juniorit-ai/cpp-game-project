@@ -4,14 +4,16 @@
 
 int main(int argc, char *argv[])
 {
+    std::string name = "JuniorIT GameCraft App";
+
     int width = 1280;
     int height = 512;
 
-    std::cout << "Game starts; Scene width: " << width << ", height: " << height << ".\n";
+    std::cout << name << " starts; Scene width: " << width << ", height: " << height << ".\n";
 
     Game *game = Game::getInstance();
 
-    game->init(width, height);
+    game->init(name, width, height);
 
     Scene *scene = new FirstScene();
 

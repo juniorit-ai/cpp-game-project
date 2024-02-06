@@ -23,12 +23,12 @@ Game* Game::getInstance() {
 }
 
 // Initialize the game
-void Game::init(int width, int height) {
+void Game::init(std::string name, int width, int height) {
     this->width = width;
     this->height = height;
 
     assert(SDL_Init(SDL_INIT_VIDEO) == 0);
-    window = SDL_CreateWindow("Game Window", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width, height, SDL_WINDOW_SHOWN);
+    window = SDL_CreateWindow(name.c_str(), SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width, height, SDL_WINDOW_SHOWN);
     assert(window != nullptr);
 
     renderer = SDL_CreateRenderer(static_cast<SDL_Window*>(window), -1, SDL_RENDERER_ACCELERATED);

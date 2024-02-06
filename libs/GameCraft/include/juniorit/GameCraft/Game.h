@@ -12,7 +12,7 @@ public:
     void* renderer;
     void* window;
     
-    void init(int width, int height);
+    void init(std::string name, int width, int height);
     void addScene(Scene* scene);
     void removeScene(Scene* scene);
     void setCurrentScene(Scene* scene);
