@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../clang-game-project"
+		},
+		{
+			"path": "../dart-game-project"
+		},
+		{
+			"path": "../py-game-project"
+		},
+		{
+			"path": "../ts-game-project"
+		},
+		{
+			"path": "../gamecraft-clang"
+		}
+	],
+	"settings": {}
+}
