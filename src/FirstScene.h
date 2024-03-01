@@ -16,11 +16,6 @@ public:
     void onKeyboard(Event event, int keyCode) override;
 
     void onMouse(Event event, Point point) override;
-
-private:
-    Sprite *sprite;
-    Sprite *background;
-    int timeLapse;
 };
 
 #endif // JUNIORIT_GAMECRAFT_FIRSTSCENE_H

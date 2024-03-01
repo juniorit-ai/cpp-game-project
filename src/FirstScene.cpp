@@ -7,12 +7,17 @@
 The first scene of the game. We will update this file to implement our game logic.
 */
 
-FirstScene::FirstScene() : sprite(nullptr), background(nullptr), timeLapse(0)
+int timeLapse = 0;
+
+Sprite *sprite = nullptr;
+
+// Initialize FirstScene object
+FirstScene::FirstScene()
 {
-    // The sprite image is located in the 'res' folder.
+    // The images are located in the 'res' folder.
+    
     sprite = new Sprite("t-rex.png");
     assert(sprite != nullptr);
-
     this->addChild(sprite);
 
     sprite->setPosition(100, 200);
