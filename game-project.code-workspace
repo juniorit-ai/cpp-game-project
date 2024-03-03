@@ -17,6 +17,9 @@
 		},
 		{
 			"path": "../gamecraft-clang"
+		},
+		{
+			"path": "../container-blank"
 		}
 	],
 	"settings": {}
